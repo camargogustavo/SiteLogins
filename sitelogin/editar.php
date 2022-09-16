@@ -35,7 +35,7 @@ endif;
                 <label for="senha">Senha</label>
             </div>
             <button type="submi" name="btn-editar" class="btn">Atualizar</button>
-            <a href="index.php" class="btn green">Lista de logins</a>
+            <a href="logins.php" class="btn green">Lista de logins</a>
         </form>
     </div>
 </div>

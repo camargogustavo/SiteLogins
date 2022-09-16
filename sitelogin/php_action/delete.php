@@ -6,17 +6,17 @@ require_once 'db_connect.php';
 
 if(isset($_POST['btn-deletar'])):
 
-    $id = mysqli_escape_string($connet, $_POST['id']);
+    $id = mysqli_escape_string($connect, $_POST['id']);
 
-    $sql = "DELET FROM usuario WHERE id = '$id'";
+    $sql = "DELETE FROM usuario WHERE id = '$id'";
 
-    if(mysqli_query($connet, $slq)):
+    if(mysqli_query($connect, $sql)):
         $_SESSION['mensagem'] = "Deletado com sucesso";
-        header('Locantion: ../index.php');
+        header('Location: ../logins.php');
     else:
         $_SESSION['mensagem'] = "Erro ao deletar";
-        header('Locantion: ../index.php');
+        header('Location: ../logins.php');
     endif;
 endif;
 
-?>
+?>  

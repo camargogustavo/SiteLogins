@@ -4,9 +4,9 @@ session_start();
 require_once 'db_connect.php';
 
 function clear ($input){
-    global $connet;
+    global $connect;
 
-    $var = mysqli_escape_string($connet, $input);
+    $var = mysqli_escape_string($connect, $input);
 
     $var = htmlspecialchars($var);
     return $var; 
@@ -19,14 +19,14 @@ if(isset($_POST['btn-cadastrar'])):
     $senha = clear ($_POST['senha']);
     
 
-    $slq = "INSERT INTO usuario (nome, login, email, senha) VALUES ('$nome', '$login', '$email', '$senha')";
+    $sql = "INSERT INTO usuario (nome, login, email, senha) VALUES ('$nome', '$login', '$email', '$senha')";
 
-    if(mysqli_query($connet, $slq)):
+    if(mysqli_query($connect, $sql)):
         $_SESSION['mensagem'] = "Cadastro realizado com sucesso";
-        header('Locantion: ../index.php');
+        header('Location: ../logins.php');
     else:
         $_SESSION['mensagem'] = "Erro ao fazer seu cadastro!!";
-        header('Locantion: ../index.php');
+        header('Location: ../logins.php');
     endif;
 endif;
 
