@@ -11,7 +11,7 @@ include_once 'includes/header.php';
 
 <div class="row">
     <div class="col s12 m6 push-m3">
-        <h3 class="light">Novo Login</h3>
+        <h3 class="arial">Novo Login</h3>
         <form action="php_action/create.php" method="POST">
             <div class="inpu-field col s12">
                 <input type="text" id="nome" name="nome">
@@ -30,7 +30,8 @@ include_once 'includes/header.php';
                 <label for="Senha">Senha</label>
             </div>
             <button type="submit" name="btn-cadastrar"  class="btn">Cadastrar</button>
-            <a href="logins.php" class="btn green"> Lista de Logins</a>
+            <a href="logins.php" class="btn green">Lista de Logins</a>
+            <a href="tela_login.php" class="btn green">Login</a>
         </form>
     </div>
 </div>

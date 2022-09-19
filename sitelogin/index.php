@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/estilo.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Pagina Inicial</title>
+    <style>
+        .btn-nav{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
 <body>
     <nav>
@@ -14,8 +21,9 @@
         </div>
         <button>&#9776;</button>
         <ul>
-            <li><p>Cadastro</p></li>
-            <li><p>Login</p></li>
+            <li><p><a class="btn-nav" href="adicionar.php">Cadastro</a></p></li>
+            <li><p><a class="btn-nav" href="tela_login.php">Login</a></p></li>
+            <li><p><a class="btn-nav" href="logins.php">Logins</a></p></li>
             <li><p>Perfil</p></li>
         </ul>
     </nav>
