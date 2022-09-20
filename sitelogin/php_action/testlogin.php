@@ -20,7 +20,7 @@ if(isset($_POST['btn-login'])):
 
         if(mysqli_num_rows($result) < 1):
 
-            unset($_SESSION['email'] );
+            unset($_SESSION['email']);
             unset($_SESSION['senha']);
 
             header('Location: ../tela_login.php');
@@ -35,5 +35,3 @@ if(isset($_POST['btn-login'])):
         header('Location: ../tela_login.php');
     endif;
 endif;
-
-?>
