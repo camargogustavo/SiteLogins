@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(to right,rgb(30, 30, 30), rgb(0,0,0));
+    background: linear-gradient(to right, rgb(20, 147, 220), rgb(1, 64, 142));
 }
 
 ul {
@@ -11,8 +11,8 @@ ul {
 }
 
 nav {
-    background-color: black;
-    padding: 0 20px;
+    background-color: dodgerblue;
+    padding: 1px 20px;
     justify-content: space-between;
     align-items: center;
 }

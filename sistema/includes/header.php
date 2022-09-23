@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Cadastro de Logins</title>
+    <link href="../css/style_adicionar.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>

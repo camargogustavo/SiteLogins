@@ -23,9 +23,9 @@ include_once '../includes/footerindex.php';
             <br><br>
             <input type="password" name="senha" placeholder="Senha">
             <br><br>
-            <input type="submit" name="btn-login" value=Enviar class="inputsubmit">
+            <a href="../php_action/testlogin.php"><input type="submit" name="btn-login" value=Login class="inputsubmit"></a>
             <br>
-            <input type="submit"class="btn-cadastra" value=Cadastrar-se><a href="../adicionar.php">cadastrase</a>
+            <a href="../adicionar.php"><input type="submit"class="btn-cadastra" value=Cadastrar-se></a>
         </form>
     </div>
 <?php
